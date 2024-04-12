@@ -2,6 +2,10 @@
 
 Welcome to the Tax Calculator Web App! This application allows users to calculate their overall income after tax deductions based on their gross annual income, extra income, age group, and total applicable deductions.
 
+## Hosted Web App
+
+You can access the hosted web app [Tax calculator here](https://fyle-taxcalci.netlify.app/).
+
 ## Features
 
 - Calculate overall income after tax deductions.
