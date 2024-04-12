@@ -47,14 +47,25 @@ cd fyle-tax-calci
 ## Screenshots
 
 1. Initial condition of the calculator
+
    ![Screenshot 1](./screenshots/1.%20Default.png)
+
 2. Valid inputs
+
    ![Screenshot 2](./screenshots/2.%20Valid%20Inputs.png)
+
 3. Valid inputs overall income
+
    ![Screenshot 3](./screenshots/3.%20Output%20Income%20Valid%20input.png)
+
 4. Valid decimal inputs
+
    ![Screenshot 4](./screenshots/4.Decimal%20Valid%20Value.png)
+
 5. Valid decimal overall income
+
    ![Screenshot 5](./screenshots/5.%20Decimal%20Income%20output.png)
+
 6. Invalid input (Border color changes as we give input wrong, improve the User Experience)
+
    ![Screenshot 6](./screenshots/6.%20Invalid%20inputs.png)
