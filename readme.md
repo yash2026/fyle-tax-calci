@@ -25,3 +25,11 @@ To run the application locally, follow these steps:
 ```bash
 git clone https://github.com/yash2026/fyle-tax-calci.git
 ```
+
+2. Navigate to the project directory:
+
+```bash
+cd fyle-tax-calci
+```
+
+3. Open the index.html file in your web browser.
