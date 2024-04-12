@@ -42,7 +42,7 @@ function enableDisableSubmitButton() {
   const isValidInputs =
     grossAnnualIncome !== 0 &&
     extraIncome !== 0 &&
-    deductions !== 0 &&
+    deductions !== null &&
     ageGroup !== "";
   submitButton.disabled = !isValidInputs;
 }
