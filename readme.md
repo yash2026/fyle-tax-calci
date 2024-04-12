@@ -21,3 +21,7 @@ Welcome to the Tax Calculator Web App! This application allows users to calculat
 To run the application locally, follow these steps:
 
 1. Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/tax-calculator-web-app.git
+```
