@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fyle Assignment</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="box">
+        <h2 class="heading">Tax calculator</h2>
+        <div class="form-div">
+          <form action="" class="form">
+            <div class="inputs">
+              <label for="" class="label"
+                >Enter gross annual income &nbsp;<i
+                  class="bi bi-question-circle"
+                  ata-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Gross annual income is your total salary in a year before any deductions."
+                ></i
+              ></label>
+              <span class="input-area">
+                <input
+                  type="text"
+                  placeholder="Enter gross annual income"
+                  class="input"
+                  id="gross-annual"
+                  required />
+                <i
+                  class="bi bi-exclamation-circle gross-annual-income-icon hide"
+                  ata-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Please enter numbers only."
+                ></i
+              ></span>
+            </div>
+            <div class="inputs">
+              <label for="" class="label"
+                >Enter extra income &nbsp;<i
+                  class="bi bi-question-circle"
+                  ata-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Extra income"
+                ></i
+              ></label>
+              <span class="input-area"
+                ><input
+                  type="text"
+                  placeholder="Enter extra income (other sources)"
+                  class="input"
+                  id="extra-income"
+                  required
+                />
+                <i
+                  class="bi bi-exclamation-circle extra-income-icon hide"
+                  ata-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Please enter numbers only."
+                ></i>
+              </span>
+            </div>
+            <div class="inputs">
+              <label for="" class="label"
+                >Enter age group &nbsp;<i
+                  class="bi bi-question-circle"
+                  ata-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Age Group."
+                ></i
+              ></label>
+              <!-- <input type="text" placeholder="" class="input" /> -->
+              <select
+                class="input"
+                id="age-group"
+                aria-label="Default select example"
+              >
+                <option disabled selected value></option>
+                <option value="&lt;40">Less than 40</option>
+                <option value="&gt;=40 & &lt;60">Between 40 and 60</option>
+                <option value="&gt;=60">Greater than 60</option>
+              </select>
+            </div>
+            <div class="inputs">
+              <label for="" class="label"
+                >Enter total applicable deductions &nbsp;<i
+                  class="bi bi-question-circle"
+                  ata-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Total applicable deductions"
+                ></i
+              ></label>
+              <span class="input-area"
+                ><input
+                  type="text"
+                  placeholder="Add total applicable deductions"
+                  class="input"
+                  id="total-applicable-deductions"
+                />
+                <i
+                  class="bi bi-exclamation-circle deduction-icon hide"
+                  ata-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Please enter numbers only."
+                ></i>
+              </span>
+            </div>
+          </form>
+        </div>
+        <div class="button">
+          <button class="submit" id="submit" onclick="calculateOverallIncome">
+            Submit
+          </button>
+          <button class="reset" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="result" id="overview">
+      <div class="popup" id="popup-box">
+        <div class="content">
+          <h2>Your overall income will be</h2>
+          <span class="overall-income"></span>
+          <p>after tax deductions</p>
+        </div>
+        <div class="close">
+          <button class="submit" id="close">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
