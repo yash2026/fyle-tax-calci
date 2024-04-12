@@ -23,5 +23,5 @@ To run the application locally, follow these steps:
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/tax-calculator-web-app.git
+git clone https://github.com/yash2026/fyle-tax-calci.git
 ```
