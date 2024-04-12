@@ -33,3 +33,12 @@ cd fyle-tax-calci
 ```
 
 3. Open the index.html file in your web browser.
+
+## Usage
+
+1. Enter your gross annual income.
+2. Enter any extra income from other sources.
+3. Select your age group.
+4. Add total applicable deductions.
+5. Click the Submit button to calculate your overall income after tax deductions.
+6. Click the Close button to close the result popup.
