@@ -73,3 +73,11 @@ cd fyle-tax-calci
 6. Invalid input (Border color changes as we give input wrong, improve the User Experience)
 
    ![Screenshot 6](./screenshots/6.%20Invalid%20inputs.png)
+
+## Running Tests
+
+To run tests, open the `test.html` file in your web browser and ensure that all tests are passing.
+
+## Contributions
+
+Contributions are welcome! Please fork the repository and create a pull request with your proposed changes.
