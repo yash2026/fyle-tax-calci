@@ -16,15 +16,31 @@ let ageGroup = "";
 function validateInput(inputElement) {
   const inputValue = inputElement.value.trim(); // Trim the input value to remove leading/trailing spaces
   const isValidNumber = /^\d+(\.\d+)?$/.test(inputValue);
-  console.log(isValidNumber);
-  if (isValidNumber && inputValue !== "") {
-    inputElement.style.borderColor = "green";
-    inputElement.nextElementSibling.classList.add("hide"); // Hide exclamation icon
-    return parseFloat(inputValue);
+
+  if (inputElement.id === "total-applicable-deductions") {
+    if (inputValue === "") {
+      inputElement.style.borderColor = ""; // Keep border color as initial state
+      inputElement.nextElementSibling.classList.add("hide"); // Hide exclamation icon
+      return 0; // Return 0 for empty input
+    } else if (isValidNumber && parseFloat(inputValue) >= 0) {
+      inputElement.style.borderColor = "green"; // Change border color to green
+      inputElement.nextElementSibling.classList.add("hide"); // Hide exclamation icon
+      return parseFloat(inputValue);
+    } else {
+      inputElement.style.borderColor = "red"; // Change border color to red
+      inputElement.nextElementSibling.classList.remove("hide"); // Show exclamation icon
+      return null; // Return null for invalid input
+    }
   } else {
-    inputElement.style.borderColor = "red";
-    inputElement.nextElementSibling.classList.remove("hide"); // Show exclamation icon
-    return 0;
+    if (isValidNumber && inputValue !== "") {
+      inputElement.style.borderColor = "green";
+      inputElement.nextElementSibling.classList.add("hide");
+      return parseFloat(inputValue);
+    } else {
+      inputElement.style.borderColor = "red";
+      inputElement.nextElementSibling.classList.remove("hide");
+      return 0;
+    }
   }
 }
 
